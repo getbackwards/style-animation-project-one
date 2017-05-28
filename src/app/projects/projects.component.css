@@ -1,9 +1,50 @@
 .marked {
   border-color: cornflowerblue;
   box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.5), inset 0 0 0  1px cornflowerblue;
+  transition: border-color 0.5s linear, box-shadow 0.5s ease-out;
+  animation: marked 0.5s ease-out forwards;
+}
+
+@keyframes marked {
+  0% {
+   transform: scale(1);
+  }
+  50% {
+    transform: scale(1.004);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .inactive {
   border-color: #cdcdcd;
   box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.25), inset 0 0 0 0 transparent;
+  /*transition: border 0.5s ease-out, box-shadow 0.5s ease-out;*/
+  transition: box-shadow 0.5s ease-out;
+}
+
+.loading-bar {
+  width: 50%;
+  height: 20px;
+  border: 1px solid #cdcdcd;
+  margin: 2rem auto;
+  box-sizing: content-box;
+}
+
+.loading-bar-element {
+  width: 0;
+  height: 20px;
+  background-color: cornflowerblue;
+  /*animation: loading 1s ease-out infinite;*/
+  animation: loading 1s ease-out forwards;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
