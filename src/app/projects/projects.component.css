@@ -1,7 +1,9 @@
+.inactive {
+  border: 1px solid #cdcdcd;
+}
+
 .marked {
-  border-color: cornflowerblue;
-  box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.5), inset 0 0 0  1px cornflowerblue;
-  transition: border-color 0.5s linear, box-shadow 0.5s ease-out;
+  border: 2px solid cornflowerblue;
   animation: marked 0.5s ease-out forwards;
 }
 
@@ -10,18 +12,11 @@
    transform: scale(1);
   }
   50% {
-    transform: scale(1.004);
+    transform: scale(1.04);
   }
   100% {
     transform: scale(1);
   }
-}
-
-.inactive {
-  border-color: #cdcdcd;
-  box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.25), inset 0 0 0 0 transparent;
-  /*transition: border 0.5s ease-out, box-shadow 0.5s ease-out;*/
-  transition: box-shadow 0.5s ease-out;
 }
 
 .loading-bar {

@@ -1,16 +1,15 @@
 :host {
   display: block;
-  border: 1px solid #cdcdcd;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 3px rgba(204, 204, 204, 0.5);
   margin: 20px 0;
-  padding: 1rem;
-  transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-out;
+  /*padding: 20px;*/
+  /*transition: border-color 0.5s ease-in-out;*/
 }
 
 /* Could have stopped the jumping around this way */
 /*:host(.marked) {*/
- /*padding: 19px; */
+ /*padding: 19px;*/
 /*}*/
 
 :host(.inactive) {
