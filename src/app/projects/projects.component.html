@@ -39,7 +39,7 @@
       *ngFor="let prj of displayedProjects; let i = index"
       [project]="prj"
       [@markedState]="markedPrjIndex === i ? 'marked' : 'default'"
-      @itemState
+      [@itemState]="createNew ? 'slidDown' : 'slidUp'"
       (@itemState.done)="onItemAnimated($event, i)"
       [ngClass]="{inactive: prj.status === 'inactive'}"
       (statusUpdated)="onStatusUpdated($event, i)"
@@ -47,4 +47,3 @@
       (click)="markedPrjIndex = i"></app-project>
   </div>
 </div>
-<!-- itemState is adding without property binding. You don't need to assign a state as we have the :enter animation from void to 'anything' -->
