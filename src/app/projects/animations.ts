@@ -41,7 +41,7 @@ export const itemStateTrigger = trigger('itemState', [
       }),
       style({
         opacity: 1,
-        transform: 'translateX(15%)',
+        transform: 'translateX(4%)',
         offset: 0.4
       }),
       style({
@@ -59,7 +59,7 @@ export const itemStateTrigger = trigger('itemState', [
       }),
       style({
         opacity: 1,
-        transform: 'translateX(-15%)'
+        transform: 'translateX(-4%)'
       }),
       style({
         opacity: 0,
